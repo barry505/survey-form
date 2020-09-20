@@ -1,0 +1,15 @@
+body {
+  background-color: #a9d7d1;
+}
+
+.form-body {
+  background-color: #fff;
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 1em;
+  border-radius: 5px;
+}
+
+[type="text"], [type="email"], [type="number"] {
+  width: 50%;
+}

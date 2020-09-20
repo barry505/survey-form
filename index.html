@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Survey Form</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" href="main.css">
+</head>
+
+<body>
+  <div class="container">
+    <h1 id="title" class="text-center">Survey Form</h1>
+    <div class="form-body">
+      <p id="description" class="text-center">Auto Tech Questionaire</p>
+      <form action="" method="get" id="survey-form">
+        <div class="form-group row">
+          <label for="name" id="name-label" class="col-sm-3 col-form-label">Name:</label>
+          <div class="col-sm-9">
+            <input type="text" id="name" required placeholder="Enter your name">
+          </div>
+        </div>
+        <div class="form-group row">
+          <label for="email" id="email-label" class="col-sm-3 col-form-label">Email:</label>
+          <div class="col-sm-9">
+            <input type="email" id="email" required placeholder="Enter your email">
+          </div>
+        </div>
+        <div class="form-group row">
+          <label for="number" id="number-label" class="col-sm-3 col-form-label">Years of Experience:</label>
+          <div class="col-sm-9">
+            <input type="number" id="number" min="0" max="50" placeholder="Enter years of experience">
+          </div>
+        </div>
+        <div class="form-group row">
+          <label for="dropdown" class="col-sm-3 col-form-label">Job Title:</label>
+          <div class="col-sm-9">
+            <select id="dropdown">
+              <option value="">Please choose a job title</option>
+              <option value="lubetech">Lube Tech</option>
+              <option value="linetech">Full Line Tech</option>
+              <option value="heavytech">Heavy Duty Tech</option>
+              <option value="bodytech">Body Shop Tech</option>
+              <option value="servicewriter">Service Writer</option>
+              <option value="servicemanager">Service Manager</option>
+            </select>
+          </div>
+        </div>
+        <div class="form-group row">
+          <div class="col-sm-3 col-form-label">
+            <p>Would you recommend a career in the automotive field</p>
+          </div>
+          <div class="col-sm-9 col-form-label">
+            <ul class="list-unstyled">
+              <li>
+                <input type="radio" id="yes" name="career" value="yes" checked>
+                <label for="yes">Yes</label>
+              </li>
+              <li>
+                <input type="radio" id="no" name="career" value="no">
+                <label for="no">No</label>
+              </li>
+              <li>
+                <input type="radio" id="maybe" name="career" value="maybe">
+                <label for="maybe">Maybe</label>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="form-group row">
+          <div class="col-sm-3 col-form-label">
+            <p>Experience:</p>
+          </div>
+          <div class="col-sm-9 col-form-label">
+            <ul class="list-unstyled">
+              <li>
+                <input type="checkbox" id="tuneup" value="tuneup">
+                <label for="tuneup">Tune-up</label>
+              </li>
+              <li>
+                <input type="checkbox" id="brakes" value="brakes">
+                <label for="brakes">Brakes</label>
+              </li>
+              <li>
+                <input type="checkbox" id="suspension" value="suspension">
+                <label for="suspension">Suspension</label>
+              </li>
+              <li>
+                <input type="checkbox" id="engine" value="engine">
+                <label for="engine">Major Engine</label>
+              </li>
+              <li>
+                <input type="checkbox" id="transmission" value="engine">
+                <label for="transmission">Transmission</label>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="form-group row">
+          <div class="col-sm-3">
+            <p>Any additional experience?</p>
+          </div>
+          <div class="col-sm-9">
+            <textarea name="additional" id="additional" cols="50" rows="10">
+            </textarea>
+          </div>
+        </div>
+        <div class="form-group text-center">
+          <input type="submit" id="submit">
+        </div>
+      </form>
+    </div>
+  </div>
+</body>
+<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+
+</html>
